@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blue_bg"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:id="@+id/top"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/titleText"
+            android:text="I\'m here \n to Listen"
+            android:textSize="40dp"
+            android:padding="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+         />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/wysa_new"
+            android:layout_marginStart="39dp"
+            android:scaleType="fitEnd"
+            android:layout_alignTop="@+id/titleText"
+            android:layout_toEndOf="@+id/titleText"
+            android:layout_marginTop="24dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/top"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="100dp"
+        android:layout_weight="0.18">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            android:buttonTint="@android:color/white"
+            android:scaleX="1.30"
+            android:scaleY="1.30"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/midText"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:text="I agree to wysa\'s terms of use and privacy policy"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/belowText"
+        android:paddingTop="80dp"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Let\'s start"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>
